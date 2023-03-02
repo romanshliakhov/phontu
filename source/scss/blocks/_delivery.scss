@@ -1,0 +1,132 @@
+.delivery {
+  &__wrapp {
+    display: grid;
+    grid-template-columns: 1fr clamp(250px, 20.833vw, 300px);
+    grid-gap: 50px clamp(30px, 8.333vw, 120px);
+
+    @media (max-width: 1240px) {
+      grid-gap: 30px;
+    }
+
+    @media (max-width: 992px) {
+      grid-template-columns: 100%;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__tabs-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 1240px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 992px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 769px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr) auto;
+    }
+
+    @media (max-width: 576px) {
+      width: 100vw;
+      padding-right: 40px;
+      display: flex;
+      align-items: center;
+      overflow-x: scroll;
+    }
+  }
+
+  &__controls-btns {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #E2DCD1;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+
+    &.active {
+      border-bottom: 2px solid var(--color-dark-gray);
+
+      .delivery__controls-btn {
+        color: var(--color-dark-gray);
+      }
+    }
+
+    @media (max-width: 1240px) {
+      &:nth-child(2) {
+        flex-grow: 1;
+      }
+    }
+
+    @media (max-width: 576px) {
+      &:nth-child(2) {
+        padding: 0 30px 10px;
+      }
+    }
+  }
+
+  &__controls-btn {
+    pointer-events: none;
+    color:  var(--color-heavy-rain);
+    transition: all 0.4s ease;
+    white-space: nowrap;
+  }
+
+  &__information-item {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    border-bottom: 1px solid #E2DCD1;
+  }
+
+  &__information-text {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 18px;
+
+    a {
+      display: inline;
+      text-decoration: underline;
+    }
+
+    ul li {
+      list-style-type: disc;
+    }
+
+    ol li {
+      list-style: decimal;
+    }
+
+    li {
+      margin-left: 20px;
+    }
+
+    li + li {
+      margin-top: 16px;
+    }
+  }
+
+  &__information-heading {
+    font-family: var(--font-family-mariupol);
+    font-size: clamp(18px, 1.667vw, 24px);
+    line-height: clamp(24px, 2.083vw, 30px);
+    font-weight: 700;
+    color: var(--color-dark-gray);
+  }
+
+  &__information-alert {
+    color: #82837F;
+  }
+}

@@ -1,0 +1,33 @@
+.news {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__pubtime {
+    margin-bottom: 8px;
+  }
+
+  &__image {
+    margin-bottom: clamp(16px, 1.667vw, 24px);
+
+    picture,
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(16px, 1.389vw, 20px);
+  }
+
+  &__title {
+    display: flex;
+    // align-items: center;
+    flex-grow: 1;
+  }
+}

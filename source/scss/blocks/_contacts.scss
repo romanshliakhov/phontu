@@ -1,0 +1,39 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+
+  &__title {
+    font-family: var(--font-family-mariupol);
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: var(--color-dark-gray);
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+
+    @media (max-width: 992px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+  }
+
+  &__item-head {
+    color: var(--color-heavy-rain);
+  }
+
+  &__item-details {
+    font-family: var(--font-family-mariupol);
+    color: var(--color-dark-gray);
+  }
+}

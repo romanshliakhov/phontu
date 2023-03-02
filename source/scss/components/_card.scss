@@ -1,0 +1,84 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-gap: clamp(16px, 2.419vw, 24px);
+
+  &__status {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    border-radius: 40px;
+    z-index: 1;
+
+    &--none {
+      padding: 10px 20px;
+      background-color: #82837F;
+    }
+
+    &--promo {
+      background-color: #E31D24;
+    }
+
+    &--preorder {
+      background-color: #1D78E3;
+    }
+
+    &--best {
+      background-color: #E3AC1D;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+  }
+
+  &__image {
+    position: relative;
+    display: flex;
+
+    picture,
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:hover {
+      .card__basket {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__info-head {
+    min-height: 68px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    grid-gap: 15px;
+  }
+
+  &__btn {
+    margin-top: 15px;
+  }
+
+  &__basket {
+    max-width: 192px;
+    left: 20px;
+    bottom: 20px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+}

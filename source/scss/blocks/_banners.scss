@@ -1,0 +1,26 @@
+.banners {
+  margin-bottom: clamp(30px, 8.333vw, 120px);
+
+  .container {
+    @media (max-width: 992px) {
+      padding: 0;
+    }
+  }
+
+  &__wrapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 20px;
+  }
+
+  &__slider {
+    width: 100%;
+  }
+
+  &__controls {
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+}
