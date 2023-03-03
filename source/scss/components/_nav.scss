@@ -1,21 +1,14 @@
 .nav {
-  max-width: 550px;
-  width: 100%;
-  flex-shrink: 0;
-
-  // @media (max-width: 1240px) {
-  //   max-width: 100%;
-  //   order: 2;
-  // }
-
   &__list {
     display: flex;
     align-items: center;
-    grid-gap: 20px;
+    grid-gap: 48px;
+  }
 
-    @media (max-width: 1240px) {
-      width: 100%;
-      justify-content: space-between;
-    }
+  &__list-link {
+    font-family: var(--font-family-futura);
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700;
   }
 }

@@ -4,11 +4,10 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  font-family: var(--font-family-inter);
-  font-size: clamp(14px, 1.111vw, 16px);
-  line-height: 21px;
-  color:  var(--color-dark-gray);
-  background-color: var(--color-light-grey);
+  font-family: var(--font-family-sfpro);
+  font-size: 21px;
+  line-height: 32px;
+  font-weight: 400;
 }
 
 html {
@@ -159,16 +158,8 @@ input[type="number"] {
 
 .container {
   position: relative;
-  max-width: 1920px;
+  max-width: 1296px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 104px;
-
-  @media (max-width: 1440px) {
-    padding: 0 clamp(50px, 7.222vw, 104px);
-  }
-
-  @media (max-width: 1240px) {
-    padding: 0 clamp(20px, 5.04vw, 50px);
-  }
+  padding: 0 clamp(24px, 6.242vw, 48px);
 }

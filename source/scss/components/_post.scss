@@ -1,0 +1,41 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 25px;
+
+  &__image {
+    display: flex;
+
+    picture,
+    img {
+      border-radius: 24px;
+    }
+  }
+
+  // &__info {
+  //   display: flex;
+  //   flex-direction: column;
+  //   grid-gap: 20px;
+  // }
+
+  &__details {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    grid-gap: 14px;
+    color: rgba(0, 0, 0, 0.48);
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: var(--font-family-futura);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+
+  &__descr {
+    color: rgba(0, 0, 0, 0.48);
+  }
+}
+
