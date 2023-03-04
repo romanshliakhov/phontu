@@ -7,12 +7,25 @@
   flex-direction: column;
   align-items: flex-end;
   grid-gap: 77px;
+  // z-index: 10;
+
+  @media (max-width: 960px) {
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    align-items: center;
+    grid-gap: 22px;
+  }
 
   &__socials {
     display: flex;
     flex-direction: column;
     align-items: center;
     grid-gap: 12px;
+
+    @media (max-width: 960px) {
+      flex-direction: row;
+    }
   }
 
   &__socials-link {
@@ -37,6 +50,19 @@
       svg {
         fill: var(--color-white);
       }
+    }
+  }
+
+  &__app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-black);
+    border-radius: 12px;
+
+    @media (max-width: 960px) {
+      width: 100%;
+      border-radius: 0;
     }
   }
 }
