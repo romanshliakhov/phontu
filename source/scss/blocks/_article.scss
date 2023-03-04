@@ -23,7 +23,7 @@
     width: 960px;
     height: 960px;
     left: -15%;
-    top: 8%;
+    top: 3%;
     background: #E5F6FC;
     background-blend-mode: overlay;
     mix-blend-mode: darken;
@@ -38,5 +38,124 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 56px;
+    margin-bottom: 56px;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 34px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    grid-gap: 40px;
+  }
+
+  &__info-details {
+    display: flex;
+    align-items: center;
+    grid-gap: 24px;
+  }
+
+  &__info-detail {
+    position: relative;
+    text-decoration: underline;
+
+    &:nth-child(n + 3) {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.48);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -15px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: currentColor;
+    }
+  }
+
+  &__author-information {
+    display: flex;
+    align-items: stretch;
+    grid-gap: 25px;
+  }
+
+  &__author-image {
+    flex-shrink: 0;
+  }
+
+  &__content {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 56px;
+
+    ul,
+    ol {
+      li {
+        margin-left: 50px;
+      }
+
+      li + li {
+        margin-top: 24px;
+      }
+    }
+
+    ul li {
+      list-style-type: disc;
+    }
+
+    ol li {
+      list-style-type: auto;
+    }
+  }
+
+  &__about-about {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.64);
+
+    span {
+      font-weight: 700;
+      font-style: normal;
+      color: var(--color-black);
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 24px;
+
+    a {
+      color: var(--color-purple);
+      text-decoration: underline;
+    }
+  }
+
+  &__banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__video {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 32px;
   }
 }
