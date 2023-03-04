@@ -53,5 +53,14 @@
       background-color: rgba(0, 0, 0, 0.48);
     }
   }
+
+  &__image {
+    display: flex;
+
+    picture,
+    img {
+      width: 100%;
+    }
+  }
 }
 

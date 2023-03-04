@@ -1,0 +1,42 @@
+.sticky {
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  grid-gap: 77px;
+
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 12px;
+  }
+
+  &__socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-black);
+    transition: all 0.4s ease;
+
+    svg {
+      transition: all 0.4s ease;
+      fill: var(--color-black);
+    }
+
+    &:hover {
+      background-color: var(--color-black);
+
+      svg {
+        fill: var(--color-white);
+      }
+    }
+  }
+}

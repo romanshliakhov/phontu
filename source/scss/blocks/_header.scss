@@ -6,6 +6,16 @@
   align-items: center;
   justify-content: space-between;
   z-index: 1;
+
+  @media (max-width: 576px) {
+    padding: 48px 24px;
+  }
+
+  &__nav {
+    @media (max-width: 769px) {
+      display: none;
+    }
+  }
 }
 
 

@@ -1,8 +1,8 @@
 .h1 {
   width: 100%;
   font-family: var(--font-family-futura);
-  font-size: 64px;
-  line-height: 72px;
+  font-size: clamp(40px, 8.322vw, 64px);
+  line-height: clamp(48px, 9.363vw, 72px);
   font-weight: 700;
   text-align: center;
 }

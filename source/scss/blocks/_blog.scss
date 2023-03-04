@@ -1,6 +1,6 @@
 .blog {
   position: relative;
-  padding-top: 237px;
+  padding-top: clamp(160px, 18.359vw, 235px);
   padding-bottom: 25px;
 
   &::before {

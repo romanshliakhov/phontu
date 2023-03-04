@@ -2,12 +2,22 @@
   display: flex;
   align-items: center;
   grid-gap: 8px;
+  overflow-x: auto;
+
+  @media (max-width: 812px) {
+    width: 100vw;
+    margin-left: 60px;
+    padding-right: 60px;
+  }
 
   &__btn {
+    flex-shrink: 0;
     padding: 14px 32px 17px;
     border: 2px solid var(--color-black);
     border-radius: 28px;
     font-family: var(--font-family-futura);
+    font-size: clamp(17px, 1.641vw, 21px);
+    line-height: 25px;
     font-weight: 700;
     transition: all 0.4s ease;
     cursor: pointer;
