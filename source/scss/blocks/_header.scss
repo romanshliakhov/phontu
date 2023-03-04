@@ -11,9 +11,16 @@
     padding: 48px 24px;
   }
 
-  &__nav {
+  &__nav-list {
     @media (max-width: 769px) {
-      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      grid-gap: 24px;
+
+      a {
+        font-size: 32px;
+        line-height: 40px;
+      }
     }
   }
 }

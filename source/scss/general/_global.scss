@@ -147,6 +147,7 @@ input[type="number"] {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .main {
@@ -177,4 +178,8 @@ input[type="number"] {
   border-radius: 11px;
   font-weight: 700;
   color: var(--color-white);
+
+  @media (max-width: 576px) {
+    max-width: 100%;
+  }
 }

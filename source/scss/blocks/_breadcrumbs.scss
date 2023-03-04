@@ -4,7 +4,9 @@
   &__wrapp {
     display: flex;
     align-items: center;
-    grid-gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 10px 40px;
     justify-content: flex-start;
     user-select: none;
     font-weight: 700;
