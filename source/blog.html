@@ -7,25 +7,34 @@
     @include('partials/header.html',{})
 
     <main class="main">
-      <article class="article">
+      <section class="blog">
         <div class="container">
-          <div class="article__inner">
-            <section class="breadcrumbs">
-              <div class="container">
-                <div class="breadcrumbs__wrapp">
-                  <a class="breadcrumbs__prev" href="/">Blog</a>
-                  <span class="breadcrumbs__current">Productivity</span>
-                </div>
+          <div class="blog__inner">
+            <div class="breadcrumbs">
+              <div class="breadcrumbs__wrapp">
+                <a class="breadcrumbs__prev breadcrumbs__prev--first" href="/">Home</a>
               </div>
-            </section>
+            </div>
 
-            <section class="content">
+            <h1 class="blog__title h1">Blog</h1>
 
-            </section>
+            <div class="blog__controls">
+              <div class="tags">
+                <span class="tags__btn active">All</span>
+                <span class="tags__btn">Productivity</span>
+                <span class="tags__btn">Best practice</span>
+                <span class="tags__btn">Lifestyle</span>
+                <span class="tags__btn">Lifestyle</span>
+                <span class="tags__btn">...</span>
+              </div>
+              <form class="search">
+                <label class="search__label">
+                  <input class="search__input" type="text" name="search" placeholder="Search">
+                </label>
+              </form>
+            </div>
 
-            <section class="posts">
-              <div class="posts__title h2">Related Posts</div>
-
+            <section class="blog__posts posts">
               <ul class="posts__list">
                 <li class="posts__list-item">
                   <div class="post">
@@ -132,11 +141,110 @@
                     </div>
                   </div>
                 </li>
+                <li class="posts__list-item">
+                  <div class="post">
+                    <div class="post__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/posts/post5.webp'>
+                        <img width='370' height='230' src='img/posts/post5.png' alt='post5'>
+                      </picture>
+                    </div>
+
+                    <div class="post__info">
+                      <div class="post__details">
+                        <div class="post__tag">Productivity</div>
+                        <div class="post__pubtime">6 min</div>
+                      </div>
+
+                      <a class="post__title" href="#">How to set up a small business phone system in 10 easy steps</a>
+
+                      <p class="post__descr">Need to know how to set up a small business phone system on a VoIP app? We’ll walk you through 10 easy steps to get the most out of your service.</p>
+                    </div>
+                  </div>
+                </li>
               </ul>
+            </section>
+
+            <section class="download">
+              <div class="download__title h3">Download Phontu now!</div>
+
+              <p class="download__descr">
+                Dingtone users are allowed to 1.5 times or double their credits with Tapjoy and Fyber used. Tapjoy provides them 1.5 times of credits while Fyber 2 times. And the highest credit amount of Fyber can be up to 200 and if you stick to getting them every day from February 10 to February 14, 800 credits will be easily earned. What a bargain!
+              </p>
+            </section>
+
+            <section class="blog__posts posts">
+              <ul class="posts__list">
+                <li class="posts__list-item">
+                  <div class="post">
+                    <div class="post__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/posts/post1.webp'>
+                        <img width='370' height='230' src='img/posts/post1.png' alt='post1'>
+                      </picture>
+                    </div>
+
+                    <div class="post__info">
+                      <div class="post__details">
+                        <div class="post__tag">Best practice</div>
+                        <div class="post__pubtime">6 min</div>
+                      </div>
+
+                      <a class="post__title" href="#">Voicemail to email: How to send & how it works</a>
+
+                      <p class="post__descr">Did you know you can send voicemails to email? Find out how it works along with how to get voicemails in your inbox.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="posts__list-item">
+                  <div class="post">
+                    <div class="post__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/posts/post2.webp'>
+                        <img width='370' height='230' src='img/posts/post2.png' alt='post2'>
+                      </picture>
+                    </div>
+
+                    <div class="post__info">
+                      <div class="post__details">
+                        <div class="post__tag">Productivity</div>
+                        <div class="post__pubtime">6 min</div>
+                      </div>
+
+                      <a class="post__title" href="#">20 texting auto-reply examples to boost your response time</a>
+
+                      <p class="post__descr">When your business supports hundreds or thousands of clients each day, you can’t always drop what you’re doing to send a text. You might be out of office, in a meeting, taking calls, or busy responding to previous messages.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="posts__list-item">
+                  <div class="post">
+                    <div class="post__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/posts/post3.webp'>
+                        <img width='370' height='230' src='img/posts/post3.png' alt='post1'>
+                      </picture>
+                    </div>
+
+                    <div class="post__info">
+                      <div class="post__details">
+                        <div class="post__tag">Best practice</div>
+                        <div class="post__pubtime">6 min</div>
+                      </div>
+
+                      <a class="post__title" href="#">Payment reminder messages: 8 email and text templates</a>
+
+                      <p class="post__descr">Use our templates for email and text payment reminder messages, plus best practices and automations to keep your balance sheet in order.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <button class="posts__more">Show more</button>
             </section>
           </div>
         </div>
-      </article>
+      </section>
     </main>
 
     @include('partials/footer.html',{})

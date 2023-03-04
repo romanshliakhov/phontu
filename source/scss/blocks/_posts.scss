@@ -9,4 +9,16 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px 40px;
   }
+
+  &__more {
+    max-width: 320px;
+    width: 100%;
+    padding: 22px 0;
+    border: 2px solid var(--color-black);
+    border-radius: 11px;
+    font-family: var(--font-family-futura);
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 700;
+  }
 }

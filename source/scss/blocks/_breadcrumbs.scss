@@ -1,5 +1,6 @@
 .breadcrumbs {
-  margin-bottom: 35px;
+  margin-bottom: 15px;
+
   &__wrapp {
     display: flex;
     align-items: center;
@@ -29,6 +30,10 @@
       top: 65%;
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
+    }
+
+    &--first::before {
+      display: none;
     }
   }
 
