@@ -8,6 +8,7 @@ body {
   font-size: 21px;
   line-height: 32px;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 html {
@@ -162,4 +163,18 @@ input[type="number"] {
   width: 100%;
   margin: 0 auto;
   padding: 0 clamp(24px, 6.242vw, 48px);
+}
+
+.download-link {
+  max-width: 288px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 22px 0 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-black);
+  border-radius: 11px;
+  font-weight: 700;
+  color: var(--color-white);
 }

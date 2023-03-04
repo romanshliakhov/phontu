@@ -141,7 +141,8 @@
     flex-direction: column;
     grid-gap: 24px;
 
-    a {
+    a,
+    span {
       color: var(--color-purple);
       text-decoration: underline;
     }
@@ -157,5 +158,32 @@
     display: flex;
     flex-direction: column;
     grid-gap: 32px;
+  }
+
+  &__spoller {
+    position: relative;
+    padding: 48px;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 24px;
+  }
+
+  &__spoller-hide {
+    position: absolute;
+    top: 48px;
+    right: 48px;
+    font-weight: 700;
+    color: var(--color-purple);
+  }
+
+  &__spoller-content {
+    padding-top: 24px;
+
+    ul {
+      margin-top: 24px;
+    }
+
+    li {
+      color: var(--color-purple);
+    }
   }
 }
