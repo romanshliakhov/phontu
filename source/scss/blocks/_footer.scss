@@ -15,6 +15,12 @@
     align-items: flex-start;
   }
 
+  &__links {
+    display: flex;
+    align-items: center;
+    grid-gap: 40px;
+  }
+
   &__nav-list {
     @media (max-width: 769px) {
       flex-direction: column;

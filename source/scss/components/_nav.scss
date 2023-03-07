@@ -2,13 +2,14 @@
   &__list {
     display: flex;
     align-items: center;
-    grid-gap: clamp(25px, 6.242vw, 48px);
+    // grid-gap: clamp(25px, 6.242vw, 48px);
+    grid-gap: 60px;
   }
 
   &__list-link {
     font-family: var(--font-family-futura);
     font-size: 17px;
-    line-height: 20px;
+    line-height: 22px;
     font-weight: 700;
     transition: all 0.4s ease;
 
