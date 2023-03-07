@@ -1,7 +1,7 @@
 .blog {
   position: relative;
   padding-top: clamp(160px, 18.359vw, 235px);
-  padding-bottom: 25px;
+  // padding-bottom: 25px;
 
   &::before {
     content: '';
@@ -82,9 +82,12 @@
     justify-content: center;
   }
 
+  &__title {
+    margin-bottom: 32px;
+  }
+
   &__controls {
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 56px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -94,7 +97,8 @@
   }
 
   &__posts {
-    padding: 45px 0 45px;
+    margin-bottom: 48px;
+    padding-bottom: 0;
     align-items: center;
   }
 }

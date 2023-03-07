@@ -15,6 +15,10 @@
     align-items: flex-start;
   }
 
+  &__logo {
+    z-index: 1;
+  }
+
   &__links {
     display: flex;
     align-items: center;

@@ -17,8 +17,7 @@
     border-radius: 28px;
     font-family: var(--font-family-futura);
     font-size: clamp(17px, 1.641vw, 21px);
-    line-height: 25px;
-    font-weight: 700;
+    line-height: 28px;
     transition: all 0.4s ease;
     cursor: pointer;
 
@@ -31,5 +30,9 @@
       color: var(--color-white);
       background-color: var(--color-black);
     }
+  }
+
+  &::-webkit-scrollbar {
+    height: 0;
   }
 }
