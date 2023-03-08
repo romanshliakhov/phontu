@@ -54,6 +54,13 @@
     }
   }
 
+  &__links {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    grid-gap: 12px;
+  }
+
   &__app {
     display: flex;
     align-items: center;
@@ -65,5 +72,11 @@
       width: 100%;
       border-radius: 0;
     }
+  }
+
+  &__qr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

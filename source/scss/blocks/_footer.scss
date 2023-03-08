@@ -22,7 +22,13 @@
   &__links {
     display: flex;
     align-items: center;
-    grid-gap: 40px;
+    grid-gap: 20px;
+  }
+
+  &__links-download {
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
   }
 
   &__nav-list {
