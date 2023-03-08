@@ -22,7 +22,7 @@
 
   &.active {
     span:first-child {
-      transform: rotate(45deg) translate(0, 0);
+      transform: rotate(45deg) translate(2px, 2px);
     }
 
     span:last-child {
