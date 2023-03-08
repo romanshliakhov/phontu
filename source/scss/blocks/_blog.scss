@@ -1,77 +1,61 @@
 .blog {
   position: relative;
   padding-top: clamp(160px, 18.359vw, 235px);
-  // padding-bottom: 25px;
 
   &::before {
     content: '';
     position: absolute;
-    width: clamp(760px, 50vw, 960px);
-    height: clamp(760px, 50vw, 960px);
-    top: -6%;
-    right: -8%;
+    width: clamp(820px, 61.979vw, 1190px);
+    height: 960px;
+    top: -10%;
+    right: -15%;
     background-color: #FCF4E5;
     background-blend-mode: overlay;
     mix-blend-mode: darken;
     border-radius: 196px;
-    transform: rotate(-15deg);
+    transform: rotate(345deg);
     z-index: -1;
 
-    @media (max-width: 1440px) {
-      width: clamp(600px, 50vw, 960px);
-      height: clamp(660px, 50vw, 960px);
-      top: -6%;
-      right: -8%;
-    }
-
-    @media (max-width: 960px) {
-      width: 600px;
-      height: 690px;
-      top: -5%;
-      right: -40%;
+    @media (max-width: 1279px) {
+      width: clamp(800px, 64.063vw, 820px);
+      top: -10%;
+      right: -35%;
     }
 
     @media (max-width: 576px) {
-      width: 300px;
-      height: 680px;
-      top: -5%;
-      right: -35%;
+      width: clamp(800px, 64.063vw, 820px);
+      top: -9%;
+      right: 0;
+      left: 45%;
     }
   }
 
   &::after {
     content: '';
     position: absolute;
-    width: clamp(760px, 50vw, 960px);
-    height: clamp(760px, 50vw, 960px);
-    left: -15%;
-    top: 10%;
+    width: 960px;
+    width: clamp(800px, 61.979vw, 1190px);
+    height: 960px;
+    left: -13%;
+    top: 7%;
     background: #E5F6FC;
     background-blend-mode: overlay;
     mix-blend-mode: darken;
     border-radius: 196px;
-    transform: rotate(-15deg);
+    transform: rotate(345deg);
     z-index: -1;
 
-    @media (max-width: 1440px) {
-      width: clamp(600px, 50vw, 960px);
-      height: clamp(660px, 50vw, 960px);
-      left: -15%;
-      top: 6%;
-    }
-
-    @media (max-width: 960px) {
-      width: 654px;
-      height: 730px;
-      left: -42%;
-      top: 1%;
+    @media (max-width: 1279px) {
+      width: clamp(800px, 64.063vw, 820px);
+      left: -33%;
+      top: 4%;
     }
 
     @media (max-width: 576px) {
-      width: 384px;
-      height: 692px;
-      left: -57%;
-      top: 0%;
+      width: 425px;
+      height: 750px;
+      left: -60%;
+      top: 0;
     }
   }
 

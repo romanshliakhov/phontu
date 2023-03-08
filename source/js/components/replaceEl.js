@@ -5,7 +5,7 @@ let replaceSettings = {
   afterend: 'afterend', // после самого элемента targetElement
   mobile: 576,
   smallTablet: 768,
-  tablet: 992
+  tablet: 942
 }
 
 let elementName = {
@@ -35,9 +35,9 @@ const replaceElements = (elements, elementClass, desktopClass, mobileClass, mobi
 }
 
 window.addEventListener('resize', () => {
-  replaceElements(items, elementName.headerNav, elementName.headerNavMobile, elementName.headerNavParent, replaceSettings.afterbegin, replaceSettings.afterend,  replaceSettings.smallTablet);
+  replaceElements(items, elementName.headerNav, elementName.headerNavMobile, elementName.headerNavParent, replaceSettings.afterbegin, replaceSettings.afterend,  replaceSettings.tablet);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  replaceElements(items, elementName.headerNav, elementName.headerNavMobile, elementName.headerNavParent, replaceSettings.afterbegin, replaceSettings.afterend,  replaceSettings.smallTablet);
+  replaceElements(items, elementName.headerNav, elementName.headerNavMobile, elementName.headerNavParent, replaceSettings.afterbegin, replaceSettings.afterend,  replaceSettings.tablet);
 });

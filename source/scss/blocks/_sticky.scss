@@ -10,7 +10,7 @@
   // z-index: 10;
   z-index: 2;
 
-  @media (max-width: 960px) {
+  @media (max-width: 576px) {
     bottom: 0;
     left: 0;
     width: 100vw;
@@ -24,7 +24,7 @@
     align-items: center;
     grid-gap: 12px;
 
-    @media (max-width: 960px) {
+    @media (max-width: 576px) {
       flex-direction: row;
     }
   }
@@ -68,8 +68,8 @@
     background-color: var(--color-black);
     border-radius: 12px;
 
-    @media (max-width: 960px) {
-      width: 100%;
+    @media (max-width: 576px) {
+      width: 100vw;
       border-radius: 0;
     }
   }
@@ -78,5 +78,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 576px) {
+      display: none;
+    }
   }
 }
