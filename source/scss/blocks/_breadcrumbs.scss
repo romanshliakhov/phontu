@@ -24,6 +24,7 @@
   &__prev {
     position: relative;
     white-space: nowrap;
+    transition: all 0.4s ease;
 
     &::before {
       content: '';
@@ -42,6 +43,10 @@
 
     &--first::before {
       display: none;
+    }
+
+    &:hover {
+      opacity: 0.8;
     }
   }
 
