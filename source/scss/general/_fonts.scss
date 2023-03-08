@@ -9,7 +9,9 @@
   }
 }
 
-@include font-face("Futura-Bold", "../fonts/Futura-Bold", 700, normal);
+@include font-face("Futura", "../fonts/Futura-Medium", 500, normal);
+@include font-face("Futura", "../fonts/Futura-Bold", 700, normal);
+
 @include font-face("SFProText", "../fonts/SFProText-Regular", 400, normal);
 @include font-face("SFProText", "../fonts/SFProText-Bold", 700, normal);
 
