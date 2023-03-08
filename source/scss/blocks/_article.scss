@@ -318,11 +318,12 @@
     padding-top: 22px;
 
     ul {
-      margin-top: 24px;
+      margin: 0;
     }
 
     li {
       a {
+        display: flex;
         color: var(--color-purple);
       }
     }
