@@ -135,18 +135,22 @@
 
     ol {
       li {
-        list-style-type: auto;
+        list-style-type: decimal;
+
+        &::marker {
+          font-weight: 700;
+        }
       }
     }
   }
 
-  &__list-unorder {
-    margin: 24px 0;
+  // &__list-unorder {
+  //   margin: 24px 0;
 
-    li {
-      list-style-type: disc;
-    }
-  }
+  //   li {
+  //     list-style-type: disc;
+  //   }
+  // }
 
   &__info {
     margin-bottom: 56px;
