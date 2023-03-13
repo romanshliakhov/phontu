@@ -38,10 +38,21 @@
     &.hide {
       display: none;
     }
+  }
 
-    &:last-child {
+  &__head {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+
+    .tags__btn:last-child {
       display: block;
     }
+
+  }
+
+  &__more {
+    display: block;
   }
 
   &::-webkit-scrollbar {
