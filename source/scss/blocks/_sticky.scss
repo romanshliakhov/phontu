@@ -52,6 +52,16 @@
         fill: var(--color-white);
       }
     }
+
+    @media (max-width: 576px) {
+      width: 48px;
+      height: 48px;
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
   }
 
   &__links {
@@ -70,7 +80,6 @@
       @media (max-width: 991px) {
         opacity: 1;
         visibility: visible;
-
       }
     }
   }
