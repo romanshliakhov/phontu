@@ -87,11 +87,12 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     grid-gap: 8px;
 
     @media (max-width: 812px) {
       width: max-content;
+      justify-content: flex-start;
     }
   }
 }
