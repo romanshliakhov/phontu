@@ -59,6 +59,20 @@
     align-items: center;
     flex-direction: row-reverse;
     grid-gap: 12px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.4s ease;
+
+    &.hide {
+      opacity: 0;
+      visibility: hidden;
+
+      @media (max-width: 991px) {
+        opacity: 1;
+        visibility: visible;
+
+      }
+    }
   }
 
   &__app {

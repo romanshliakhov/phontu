@@ -9,9 +9,22 @@
   @media (max-width: 812px) {
     width: 100vw;
     margin-left: 60px;
-    padding-right: 60px;
+    padding-right: 100px;
     overflow-x: auto;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
+
+  @media (max-width: 576px) {
+    margin-left: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+
+
 
   &__btn {
     flex-shrink: 0;
@@ -37,6 +50,10 @@
 
     &.hide {
       display: none;
+
+      @media (max-width: 812px) {
+        display: flex;
+      }
     }
   }
 
@@ -47,8 +64,15 @@
 
     .tags__btn:last-child {
       display: block;
+
+      @media (max-width: 812px) {
+        display: none;
+      }
     }
 
+    @media (max-width: 812px) {
+      margin-right: 40px;
+    }
   }
 
   &__more {
@@ -57,5 +81,17 @@
 
   &::-webkit-scrollbar {
     height: 0;
+  }
+
+  &__bot {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    grid-gap: 8px;
+
+    @media (max-width: 812px) {
+      width: max-content;
+    }
   }
 }
