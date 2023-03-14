@@ -1,19 +1,16 @@
 const stickyEl = document.querySelector('.sticky__links');
 
-// const addCustomClass = function(el, customClass) {
-//   el.classList.add(`${customClass}`);
-// }
+document.addEventListener('DOMContentLoaded', function(e) {
+  document.addEventListener('scroll', function(e) {
+      let documentHeight = document.body.scrollHeight;
 
-window.onscroll = function () {
-  let scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrolled > 1500) {
-    stickyEl.classList.add('hide');
-  } else {
-    stickyEl.classList.remove('hide');
-  }
-}
+      let currentScroll = window.scrollY + window.innerHeight;
+      let modifier = 200;
 
-
-
-
-
+      if(currentScroll + modifier > documentHeight) {
+        stickyEl.classList.add('hide');
+      } else {
+        stickyEl.classList.remove('hide');
+      }
+  })
+})
