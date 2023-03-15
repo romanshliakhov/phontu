@@ -166,6 +166,7 @@ input[type="number"] {
 }
 
 .download-link {
+  height: fit-content;
   max-width: 288px;
   width: 100%;
   margin: 32px 0 56px;
@@ -180,6 +181,7 @@ input[type="number"] {
   line-height: 28px;
   font-weight: 700;
   color: var(--color-white) !important;
+  text-decoration: none !important;
   transition: all 0.4s ease;
 
   @media (max-width: 576px) {
