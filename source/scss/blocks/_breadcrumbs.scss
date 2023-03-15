@@ -19,6 +19,10 @@
     @media (max-width: 960px) {
       justify-content: center;
     }
+
+    a {
+      color: currentColor !important;
+    }
   }
 
   &__prev {
