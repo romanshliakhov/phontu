@@ -15,9 +15,11 @@
     overflow-x: auto;
     overflow-y: hidden;
     padding-bottom: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+
+    flex-direction: row;
   }
 
   @media (max-width: 576px) {
@@ -72,7 +74,7 @@
 
     @media (max-width: 812px) {
       // margin-right: 40px;
-      width: max-content;
+      // width: max-content;
     }
   }
 
@@ -92,7 +94,7 @@
     grid-gap: 8px;
 
     @media (max-width: 812px) {
-      width: max-content;
+      // width: max-content;
       margin-left: 40px;
       justify-content: flex-start;
     }
