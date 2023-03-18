@@ -10,11 +10,14 @@
     width: 100vw;
     margin-left: 60px;
     padding-right: 100px;
-    overflow-x: auto;
     justify-content: flex-start;
     flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
   }
 
   @media (max-width: 576px) {
@@ -22,9 +25,6 @@
     padding-left: 24px;
     padding-right: 24px;
   }
-
-
-
 
   &__btn {
     flex-shrink: 0;
@@ -53,6 +53,7 @@
 
       @media (max-width: 812px) {
         display: flex;
+        flex-shrink: 0;
       }
     }
   }
