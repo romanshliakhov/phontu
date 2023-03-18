@@ -53,7 +53,6 @@
 
       @media (max-width: 812px) {
         display: flex;
-        flex-shrink: 0;
       }
     }
   }
@@ -62,6 +61,7 @@
     display: flex;
     align-items: center;
     grid-gap: 8px;
+    width: max-content;
 
     .tags__btn:last-child {
       display: block;
@@ -71,9 +71,9 @@
       }
     }
 
-    @media (max-width: 812px) {
-      margin-right: 40px;
-    }
+    // @media (max-width: 812px) {
+    //   margin-right: 40px;
+    // }
   }
 
   &__more {
