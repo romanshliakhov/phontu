@@ -58,7 +58,6 @@
       }
     }
   }
-
   &__head {
     display: flex;
     align-items: center;
@@ -73,8 +72,8 @@
     }
 
     @media (max-width: 812px) {
-      // margin-right: 40px;
-      // width: max-content;
+      margin-right: 40px;
+      width: fit-content;
     }
   }
 
@@ -95,7 +94,7 @@
 
     @media (max-width: 812px) {
       // width: max-content;
-      margin-left: 40px;
+      // margin-left: 40px;
       justify-content: flex-start;
     }
   }
