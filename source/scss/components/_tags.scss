@@ -15,8 +15,6 @@
     overflow-x: auto;
     overflow-y: hidden;
     padding-bottom: 10px;
-    // display: grid;
-    // grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
 
     flex-direction: row;
@@ -31,23 +29,23 @@
   &__btn {
     flex-shrink: 0;
     padding: 13px 32px 15px;
-    border: 2px solid var(--color-black);
-    border-radius: 30px;
-    font-family: var(--font-family-futura);
+    border-radius: 15px;
+    background-color: var(--color-border);
+    font-family: var(--font-family-gothampro);
     font-size: clamp(17px, 1.641vw, 21px);
     line-height: 28px;
-    font-weight: 700;
+    font-weight: 800;
     transition: all 0.4s ease;
     cursor: pointer;
 
     &:hover {
       color: var(--color-white);
-      background-color: var(--color-black);
+      background-color: var(--color-purple);
     }
 
     &.active {
       color: var(--color-white);
-      background-color: var(--color-black);
+      background-color: var(--color-purple);
     }
 
     &.hide {
@@ -93,8 +91,6 @@
     grid-gap: 8px;
 
     @media (max-width: 812px) {
-      // width: max-content;
-      // margin-left: 40px;
       justify-content: flex-start;
     }
   }
