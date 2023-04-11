@@ -88,8 +88,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-black);
-    border-radius: 12px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+    border-radius: 9px;
 
     @media (max-width: 576px) {
       width: 100vw;
@@ -102,6 +103,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+    border-radius: 9px;
+    padding: 2px;
+    height: 72px;
+    width: 72px;
 
     @media (max-width: 576px) {
       display: none;
